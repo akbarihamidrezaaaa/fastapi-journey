@@ -12,8 +12,10 @@ class TodoCreateSchema(TodoBase):
     pass
 
 
-class TodoUpdateSchema(TodoBase):
+class TodoUpdateSchema(BaseModel):
     id: int
+    title: str
+    description: str | None = None
 
 
 class TodoReadSchema(BaseModel):

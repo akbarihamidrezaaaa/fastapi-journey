@@ -1,7 +1,9 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import declarative_base, sessionmaker
 
-DATABASE_URL = "sqlite:///./database.db"
+DATABASE_URL = (
+    "postgresql://postgres:iDmACDXobtLgxj@localhost:5432/fastapi-journey_database"
+)
 
 engine = create_engine(DATABASE_URL)
 
